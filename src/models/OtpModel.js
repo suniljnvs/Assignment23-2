@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 
 const otpSchema = new mongoose.Schema({
   email: {
@@ -10,6 +10,10 @@ const otpSchema = new mongoose.Schema({
   otp: {
     type: String,
     required: true
+  },
+  otpcount :{
+    type : Number,
+    default: 0
   },
   createdAt: {
     type: Date,
