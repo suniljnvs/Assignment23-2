@@ -5,8 +5,8 @@ function sendEmail(email_to,email_subject,email_text){
       var transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
-              user: "sunilkumarjnvs0551998@gmail.com",
-              pass: "sgaijoadzytakyeh"
+              user: "sunilk***********98@gmail.com",
+              pass: "sgaij********akyeh"
           },
           tls: {
               rejectUnauthorized: false
